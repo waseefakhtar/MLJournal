@@ -1,6 +1,12 @@
 # MLJournal
 Apple Machine Learning Journal for iOS
 
+<p align="center">
+  <img src="https://github.com/waseefakhtar/MLJournal/blob/master/Screenshots/Simulator%20Screen%20Shot%20Jul%2022,%202017,%202.06.18%20PM.png?raw=true" width="256"/>
+  <img src="https://github.com/waseefakhtar/MLJournal/blob/master/Screenshots/Simulator%20Screen%20Shot%20Jul%2022,%202017,%202.06.32%20PM.png?raw=true" width="256"/>
+  <img src="https://github.com/waseefakhtar/MLJournal/blob/master/Screenshots/Simulator%20Screen%20Shot%20Jul%2022,%202017,%202.06.37%20PM.png?raw=true" width="256"/>
+</p>
+
 MLJournal is an unofficial Apple Machine Learning Journal. Here, you can read posts written by Apple engineers about their work using machine learning technologies to help build innovative products for millions of people around the world. 
 
 Learn more: machinelearning.apple.com
