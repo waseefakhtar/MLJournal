@@ -5,8 +5,6 @@ MLJournal is an unofficial Apple Machine Learning Journal. Here, you can read po
 
 Learn more: machinelearning.apple.com
 
---
-
 ## Getting Started
 
 1. Download Xcode 8.3.3
@@ -14,14 +12,10 @@ Learn more: machinelearning.apple.com
 3. Run `pod install` to install dependencies.
 4. Run the app.
 
---
-
 ## Dependencies
 
 - [Firebase](https://firebase.google.com)
 - [DTCoreText](https://github.com/Cocoanetics/DTCoreText)
-
---
 
 ## Features To Be Implemented
 
