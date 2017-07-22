@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFText-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="Tx7-Yx-Vf6">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="9eP-Tj-tkz" customClass="DetailViewController" customModule="MLJournal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B1S-m0-wEf"/>
+                        <viewControllerLayoutGuide type="bottom" id="1pP-b4-Mv6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PFq-88-DCV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CQq-lW-znk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CQq-lW-znk" firstAttribute="leading" secondItem="PFq-88-DCV" secondAttribute="leading" id="66j-6K-yTn"/>
+                            <constraint firstItem="CQq-lW-znk" firstAttribute="top" secondItem="PFq-88-DCV" secondAttribute="top" id="dvQ-63-wMl"/>
+                            <constraint firstAttribute="trailing" secondItem="CQq-lW-znk" secondAttribute="trailing" id="gNX-Tq-H8q"/>
+                            <constraint firstItem="1pP-b4-Mv6" firstAttribute="top" secondItem="CQq-lW-znk" secondAttribute="bottom" id="l5t-LY-SSH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sc2-2L-3s4"/>
+                    <connections>
+                        <outlet property="textView" destination="CQq-lW-znk" id="22t-Mq-Sxf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oQa-Vk-oPp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976.79999999999995" y="91.304347826086968"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jTc-ld-2Go">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i5X-4s-LDK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="acm-BZ-BQ3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9eP-Tj-tkz" kind="relationship" relationship="rootViewController" id="DpO-tg-5kB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fe6-Eh-8tN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="91.304347826086968"/>
+        </scene>
+    </scenes>
+</document>
